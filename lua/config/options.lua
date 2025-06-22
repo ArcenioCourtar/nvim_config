@@ -11,7 +11,7 @@ opt.showmatch = true
 opt.smartindent = true
 opt.autoindent = true
 opt.list = true
-opt.listchars:append { tab = '-->', space = '•' }
+opt.listchars:append { tab = '-->', space = '◦' }
 opt.wrap = false
 opt.swapfile = false
 opt.mouse = {}
