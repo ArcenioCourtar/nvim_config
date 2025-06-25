@@ -30,8 +30,9 @@ ls.add_snippets("cpp", {
 		local nl = function(str)
 			table.insert(res, str)
 		end
-		nl("#ifndef " .. guard)
+		l("#ifndef " .. guard)
 		nl("# define " .. guard)
+		nl("")
 		nl("class	" .. class .. " {")
 		nl("public:")
 		nl("	" .. class .. "();")

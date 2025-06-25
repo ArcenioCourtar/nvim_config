@@ -1,7 +1,7 @@
 local opt = vim.opt
 local g = vim.g
 
-
+opt.colorcolumn = "81"
 opt.shiftwidth = 4
 opt.tabstop = 4
 opt.number = true
@@ -12,7 +12,7 @@ opt.smartindent = true
 opt.autoindent = true
 opt.list = true
 opt.listchars:append { tab = '-->', space = '◦' }
-opt.wrap = false
+opt.wrap = true
 opt.swapfile = false
 opt.mouse = {}
 opt.cursorline = true
