@@ -1,13 +1,14 @@
 -- i use neovim btw
 -- i use arch btw
--- brazil mentioned btw
+-- 🏳️‍🌈
+-- 🩷🤍💜🖤💙
 
 -- requirements
 require("config.keymaps")
 require("config.options")
 require("config.lazy")
 -- autocmds
-vim.api.nvim_set_hl(0, "ColorColumn", { bg='#252525' })
+vim.api.nvim_set_hl(0, "ColorColumn", { bg='#000000' })
 vim.api.nvim_create_autocmd('TextYankPost', {
 	desc = 'Highlight when yanking text',
 	group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
