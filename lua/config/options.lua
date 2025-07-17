@@ -17,6 +17,7 @@ opt.swapfile = false
 opt.mouse = {}
 opt.cursorline = true
 opt.cursorlineopt = "number"
+vim.diagnostic.config({ virtual_text = true })
 g.c_syntax_for_h = true
 g.mapleader = " "
 g.maplocalleader = "\\"
