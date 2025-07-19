@@ -35,18 +35,6 @@ return {
 			lspconf.lua_ls.setup {}
 			lspconf.clangd.setup {}
 
-			require("lspconfig.configs").norm_ls = {
-				default_config = {
-					cmd = { "python3", "/home/mde-beer/languageservers/norm_ls.py" },
-					filetypes = { "c" },
-					single_file_support = true,
-					root_dir = function(fname)
-						return vim.fs.dirname(fname) or vim.fn.getcwd()
-					end,
-				},
-			}
-			lspconf.norm_ls.setup {}
-
 			vim.api.nvim_create_autocmd("LspAttach", {
 				group = vim.api.nvim_create_augroup("LSPOnAttach", { clear = true }),
 				callback = function(event)
